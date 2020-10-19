@@ -93,8 +93,6 @@ header {
   font-weight: 700;
 }
 
-<<<<<<< Updated upstream
-=======
 .welcome_container span:before {
   content: '';
   animation: animate infinite 16s;
@@ -121,7 +119,6 @@ header {
   }
 }
 
->>>>>>> Stashed changes
 .slideshow_container {
   max-width: 1000px;
   position: relative;

@@ -10,7 +10,9 @@ hr {
   margin-top: 3em;
   margin-bottom: 2em;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* Basically the whole header */
 header {
   width: 100%;

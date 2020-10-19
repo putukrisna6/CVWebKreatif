@@ -6,6 +6,14 @@ body {
   margin: 0px;
 }
 
+hr {
+  border-top: 2px solid #ccc;
+  border-bottom: none;
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
+/* Basically the whole header */
 header {
   width: 100%;
   height: 80px;
@@ -14,21 +22,19 @@ header {
   position: fixed;
   top: 0;
   z-index: 10;
+  opacity: 0.98;
 }
-
 .inner_header {
   width: 1000px;
   height: 100%;
   display: block;
   margin: 0 auto;
 }
-
 .logo_container {
   height: 100%;
   display: table;
   float: left;
 }
-
 .logo_container h1 {
   font-family: 'Montserrat', sans-serif;
   color: white;
@@ -38,17 +44,14 @@ header {
   font-size: 40px;
   font-weight: 200;
 }
-
 .logo_container h1 span {
   font-weight: 900;
 }
-
 .navigation {
   float: right;
   margin-top: 0px;
   height: 100%;
 }
-
 .navigation a {
   font-family: 'Lato';
   height: 100%;
@@ -57,7 +60,6 @@ header {
   padding: 0px 20px;
   text-decoration: none;
 }
-
 .navigation a li {
   display: table-cell;
   vertical-align: middle;
@@ -67,6 +69,7 @@ header {
   font-size: 16px;
 }
 
+/* Welcome Section */
 .welcome_container {
   width: 100%;
   height: 700px;
@@ -78,7 +81,6 @@ header {
   display: block;
   text-align: left;
 }
-
 .welcome_container h3 {
   font-family: 'Ubuntu', sans-serif;
   color: white;
@@ -92,7 +94,6 @@ header {
   padding-left: 100px;
   font-weight: 600;
 }
-
 .welcome_container h2 {
   font-family: 'Ubuntu', sans-serif;
   color: white;
@@ -107,7 +108,6 @@ header {
   padding-bottom: 50px;
   font-weight: 600;
 }
-
 .welcome_container h1 {
   font-family: 'Montserrat';
   color: white;
@@ -121,12 +121,10 @@ header {
   padding-left: 100px;
   font-weight: 700;
 }
-
 .welcome_container span:before {
   content: '';
   animation: animate infinite 16s;
 }
-
 @keyframes animate {
   0% {
     content: 'Salam!';
@@ -148,30 +146,27 @@ header {
   }
 }
 
+/* Grids, rows, and containers */
 .container {
-  max-width: 50em;
+  max-width: 1000px;
   width: 92%;
   margin-right: auto;
   margin-left: auto;
 }
-
 .row {
   clear: both;
   margin-right: -1%;
   margin-left:  -1%;
 
 }
-
 .row:before,
 .row:after {
     content: " "; /* 1 */
     display: table; /* 2 */
 }
-
 .row:after {
     clear: both;
 }
-
 .grid-1,
 .grid-2,
 .grid-3,
@@ -195,6 +190,7 @@ header {
 
 }
 
+/* Bio section */
 .bio {
   height: 396px;
   background-color: #202020;
@@ -203,7 +199,6 @@ header {
   margin-bottom: 0;
   text-align: center;
 }
-
 .bio img {
   width: 60%;
   max-width: 250px;
@@ -211,23 +206,64 @@ header {
   margin-right: auto;
   display: block;
 }
-
 .bio h1 {
+  font-family: 'Lato';
   font-size: 0.8cm;
   color: #e4382c;
 }
-
 .bio p {
+  font-family: 'Lato';
   color: white;
   font-size: 1.1em;
 }
 
+/* Education section */
+.education {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+  font-size: 0.6cm;
+  margin-bottom: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+@media screen and (min-width: 40em) {
+  .education {
+    width: 70%;
+  }
+}
+.edu_history [class*="row"] {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.edu_history h2 {
+  margin-bottom: 0;
+}
+.edu_history h2, .edu_history p {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+.edu_history [class*="row"]:last-of-type {
+  border: none;
+}
+@media screen and (min-width: 40em) {
+  .edu_history h2, .edu_history p {
+    text-align: left;
+  }
+}
+
+section ul li, section ol li {
+    font-size: 18px;
+    margin-left: 350px;
+    line-height: 1.8;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Slideshow */
 .slideshow_container {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
-
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -242,16 +278,13 @@ header {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -261,7 +294,6 @@ header {
   width: 100%;
   text-align: center;
 }
-
 .dot {
   cursor: pointer;
   height: 15px;
@@ -272,23 +304,19 @@ header {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 .active, .dot:hover {
   background-color: #717171;
 }
-
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
 }
-
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}

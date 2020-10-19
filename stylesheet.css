@@ -300,7 +300,7 @@ section ul li, section ol li {
   border: none;
 }
 .menubtn:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   cursor: grab;
 }
 .menubtn span {
@@ -316,6 +316,10 @@ section ul li, section ol li {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+.inner_prog h2 {
+  color: white;
+  font-style: 'Lato';
 }
 
 /* Slideshow */

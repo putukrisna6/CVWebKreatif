@@ -179,6 +179,9 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
+.row h3 {
+  font-style: 'Mukta';
+}
 
 @media screen and (min-width: 40em) {
   .grid-1 { width: 16.6666666%; }
@@ -250,12 +253,32 @@ header {
     text-align: left;
   }
 }
-
 section ul li, section ol li {
     font-size: 18px;
     margin-left: 350px;
     line-height: 1.8;
     font-family: 'Lato', sans-serif;
+}
+
+/* Progress bars */
+.progress_bar {
+  max-width: 98.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.w3-light-gray {
+  color: #000!important;
+  background-color: #f1f1f1!important;
+}
+.w3-round-xlarge {
+  border-radius: 16px;
+}
+.w3-blue {
+  color: #fff!important;
+  background-color: #2196f3!important;
+}
+.w3-container, .w3-panel {
+  padding: 0.01em 16px;
 }
 
 /* Slideshow */

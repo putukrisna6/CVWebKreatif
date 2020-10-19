@@ -35,7 +35,7 @@ header {
   height: 100%;
   display: table-cell;
   vertical-align: middle;
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 200;
 }
 
@@ -117,6 +117,80 @@ header {
   100% {
     content: 'Willkommen!'
   }
+}
+
+.container {
+  max-width: 50em;
+  width: 92%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  clear: both;
+  margin-right: -1%;
+  margin-left:  -1%;
+
+}
+
+.row:before,
+.row:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.row:after {
+    clear: both;
+}
+
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6 {
+  float: left;
+  width:100%;
+  padding: 0 1%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 40em) {
+  .grid-1 { width: 16.6666666%; }
+  .grid-2 { width: 33.3333333%; }
+  .grid-3 { width: 50%; }
+  .grid-4 { width: 66.6666666%; }
+  .grid-5 { width: 83.3333333%; }
+  .grid-6 { width: 100%; }
+
+}
+
+.bio {
+  height: 396px;
+  background-color: #202020;
+  padding: 3em 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.bio img {
+  width: 60%;
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.bio h1 {
+  font-size: 0.8cm;
+  color: #e4382c;
+}
+
+.bio p {
+  color: white;
+  font-size: 1.1em;
 }
 
 .slideshow_container {

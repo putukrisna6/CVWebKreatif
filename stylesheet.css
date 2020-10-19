@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0px;
 }
@@ -7,6 +11,9 @@ header {
   height: 80px;
   display: block;
   background-color: #101010;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 
 .inner_header {
@@ -49,10 +56,6 @@ header {
   padding: 0px 20px;
 }
 
-.navigation a:last-child {
-  padding-right: 0;
-}
-
 .navigation a li {
   display: table-cell;
   vertical-align: middle;
@@ -60,4 +63,98 @@ header {
   color: white;
   font-family: 'Lato';
   font-size: 16px;
+}
+
+.welcome_container {
+  width: 100%;
+  height: 700px;
+  background-color: #999;
+  background-size: cover;
+  display: block;
+  text-align: left;
+}
+
+.welcome_container h1 {
+  color: white;
+  font-size: 2cm;
+  margin: 0;
+  letter-spacing: 1px;
+  opacity: 1;
+  text-shadow: 0 3px 0 rgba(0,0,0, 0.5);
+  position: relative;
+  top: 370px;
+  padding-left: 100px;
+  font-weight: 700;
+}
+
+.slideshow_container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6 ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }

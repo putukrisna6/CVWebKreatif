@@ -281,6 +281,30 @@ section ul li, section ol li {
   padding: 0.01em 16px;
 }
 
+/* programming_skills */
+.programming_skills {
+  height: 396px;
+  background-color: #202020;
+  padding: 3em 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  border-radius: 30px;
+}
+.menubtn {
+  margin: 10px;
+  padding: 10px 45px;
+  text-align: center;
+  font-size: 14px;
+  font-style: 'Montserrat';
+  border-radius: 10px;
+  color: white;
+  border: none;
+}
+.menubtn span {
+  color: black;
+}
+
 /* Slideshow */
 .slideshow_container {
   max-width: 1000px;

@@ -385,3 +385,49 @@ section ul li, section ol li {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+/* footer */
+footer {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  padding: 70px 0;
+  box-sizing: border-box;
+  background-color: #10101a;
+}
+
+.inner_footer {
+  display: block;
+  margin: 0 auto;
+  width: 1000px;
+  height: 100%;
+}
+
+.inner_footer .footer_logo_container {
+  width: 35%;
+  float: left;
+  height: 100%;
+  display: block;
+}
+
+.footer_logo_container h1{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.footer_logo_container h1 span {
+  font-weight: 900;
+}
+
+.inner_footer .vl {
+  display: block;
+  border-right: 2px solid  #e4382c;
+  border-bottom: 2px solid  #e4382c;
+  height: 100px;
+  top: 0;
+}

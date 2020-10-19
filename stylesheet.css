@@ -79,8 +79,37 @@ header {
   text-align: left;
 }
 
-.welcome_container h1 {
+.welcome_container h3 {
   font-family: 'Ubuntu', sans-serif;
+  color: white;
+  font-size: 1cm;
+  margin: 0;
+  letter-spacing: 1px;
+  opacity: 1;
+  text-shadow: 0 3px 0 rgba(0,0,0, 0.5);
+  position: relative;
+  top: 330px;
+  padding-left: 100px;
+  font-weight: 600;
+}
+
+.welcome_container h2 {
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  font-size: 1.5cm;
+  margin: 0;
+  letter-spacing: 1px;
+  opacity: 1;
+  text-shadow: 0 3px 0 rgba(0,0,0, 0.5);
+  position: relative;
+  top: 330px;
+  padding-left: 100px;
+  padding-bottom: 50px;
+  font-weight: 600;
+}
+
+.welcome_container h1 {
+  font-family: 'Montserrat';
   color: white;
   font-size: 2cm;
   margin: 0;
@@ -88,7 +117,7 @@ header {
   opacity: 1;
   text-shadow: 0 3px 0 rgba(0,0,0, 0.5);
   position: relative;
-  top: 370px;
+  top: 330px;
   padding-left: 100px;
   font-weight: 700;
 }

@@ -255,7 +255,6 @@ header {
 }
 section ul li, section ol li {
     font-size: 18px;
-    margin-left: 350px;
     line-height: 1.8;
     font-family: 'Lato', sans-serif;
 }
@@ -283,7 +282,6 @@ section ul li, section ol li {
 
 /* programming_skills */
 .programming_skills {
-  height: 396px;
   background-color: #202020;
   padding: 3em 1em;
   margin-top: 0;
@@ -301,8 +299,23 @@ section ul li, section ol li {
   color: white;
   border: none;
 }
+.menubtn:hover {
+  transform: scale(1.2);
+  cursor: grab;
+}
 .menubtn span {
   color: black;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 18px;
+  font-weight: bold;
+}
+.inner_prog {
+  height: 100%;
+  max-width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 /* Slideshow */

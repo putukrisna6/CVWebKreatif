@@ -465,6 +465,14 @@ section ul li, section ol li {
   to {opacity: 1}
 }
 
+/* copyright */
+.cp {
+  text-align: center;
+  font-style: 'Lato' sans-serif;
+  font-weight: 100;
+  color: #888;
+}
+
 /* footer */
 footer {
   width: 100%;

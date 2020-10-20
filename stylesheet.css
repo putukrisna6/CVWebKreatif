@@ -25,7 +25,7 @@ header {
   opacity: 0.98;
 }
 .inner_header {
-  width: 1000px;
+  width: 75%;
   height: 100%;
   display: block;
   margin: 0 auto;
@@ -157,7 +157,6 @@ header {
   clear: both;
   margin-right: -1%;
   margin-left:  -1%;
-
 }
 .row:before,
 .row:after {
@@ -397,21 +396,18 @@ footer {
   box-sizing: border-box;
   background-color: #10101a;
 }
-
 .inner_footer {
   display: block;
   margin: 0 auto;
-  width: 1000px;
+  width: 75%;
   height: 100%;
 }
-
 .inner_footer .footer_logo_container {
   width: 35%;
   float: left;
   height: 100%;
   display: block;
 }
-
 .footer_logo_container h1{
   font-family: 'Montserrat', sans-serif;
   color: white;
@@ -421,11 +417,9 @@ footer {
   font-size: 40px;
   font-weight: 200;
 }
-
 .footer_logo_container h1 span {
   font-weight: 900;
 }
-
 .inner_footer .vl {
   display: block;
   border-right: 2px solid  #e4382c;

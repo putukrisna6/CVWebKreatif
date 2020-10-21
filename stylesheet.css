@@ -72,7 +72,7 @@ header {
 /* Welcome Section */
 .welcome_container {
   width: 100%;
-  height: 700px;
+  height: 800px;
   background-color: #999;
   background-image: url(img/background.jpg);
   background-repeat: no-repeat;
@@ -189,6 +189,7 @@ header {
   margin-left: auto;
 }
 .row {
+  height: 100%;
   clear: both;
   margin-right: -1%;
   margin-left:  -1%;
@@ -197,10 +198,11 @@ header {
 .row:after {
     content: " "; /* 1 */
     display: table; /* 2 */
-}
-.row:after {
     clear: both;
 }
+/* .row:after {
+    clear: both;
+} */
 .grid-1,
 .grid-2,
 .grid-3,
@@ -230,7 +232,7 @@ header {
 
 /* Bio section */
 .bio {
-  height: 396px;
+  height: 100%;
   background-color: #202020;
   padding: 3em 1em;
   margin-top: 0;

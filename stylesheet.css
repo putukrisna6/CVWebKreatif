@@ -356,7 +356,11 @@ section ul li, section ol li {
   color: white;
   font-style: 'Lato';
 }
-
+@media screen and (max-width: 800px) {
+  .menubtn span {
+    font-size: 16px;
+  }
+}
 
 /* achievements */
 .year {

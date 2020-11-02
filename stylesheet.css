@@ -156,7 +156,6 @@ header {
   animation: revealingIn var(--td) var(--d) forwards, revealingOut var(--td) var(--t) forwards;
 }
 
-
 /* animations */
 @keyframes revealBlock {
   100% {
